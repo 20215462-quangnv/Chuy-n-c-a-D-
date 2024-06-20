@@ -1,0 +1,588 @@
+/* CSS chung cho các phần tử */
+* {
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+/* Định dạng cho ảnh header */
+.header-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* Định dạng cho ảnh dưới footer */
+.bot_page {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+/* Định dạng cho tiêu đề header */
+#header_name {
+    letter-spacing: 4px;
+    background-color: #6F4E37;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(248, 246, 246, 0.1);
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    top: 35%;
+    white-space: nowrap;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
+}
+
+/* Định dạng cho nội dung purpose */
+#purpose_content {
+    position: absolute;
+    width: 80%;
+    max-width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+/* Định dạng cho các phần tử trong text parts */
+.part-1,
+.part-2 {
+    font-size: 24px;
+    white-space: nowrap;
+    letter-spacing: -0.5px; /* Điều chỉnh khoảng cách giữa các chữ */
+}
+
+/* Định dạng cho hình ảnh chiếm toàn bộ chiều rộng */
+.fit-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Định dạng cho hashtag title */
+.hashtag-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hashtag-title-normal {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+.hashtag-title-character {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #6f4e37;
+}
+
+/* Định dạng cho nội dung 'You know what i mean' */
+.you-know-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Media Queries cho màn hình điện thoại từ 350px đến 430px */
+@media only screen and (min-width: 350px) and (max-width: 430px) {
+    .col-4 {
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+    .col-8 {
+        flex: 0 0 65%;
+        max-width: 65%;
+    }
+    #header_name {
+        font-size: 20px;
+        top: 30%;
+        padding: 5px 10px;
+    }
+    #purpose_content {
+        font-size: 20px;
+        top: calc(20% + 100px); /* Điều chỉnh vị trí top cho nội dung purpose */
+    }
+    .part-1,
+    .part-2 {
+        font-size: 20px;
+    }
+}
+
+/* Font-face cho các font được sử dụng */
+@font-face {
+    font-family: 'SVN-Dancing-script';
+    src: url('/fonts/SVN-Dancing-script.ttf');
+}
+
+@font-face {
+    font-family: 'Pecita';
+    src: url('/fonts/Pecita.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('/fonts/montserrat/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-BlackItalic';
+    src: url('/fonts/montserrat/Montserrat-BlackItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('/fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-BoldItalic';
+    src: url('/fonts/montserrat/Montserrat-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('/fonts/montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBoldItalic';
+    src: url('/fonts/montserrat/Montserrat-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url('/fonts/montserrat/Montserrat-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLightItalic';
+    src: url('/fonts/montserrat/Montserrat-ExtraLightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('/fonts/montserrat/Montserrat-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('/fonts/montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-LightItalic';
+    src: url('/fonts/montserrat/Montserrat-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('/fonts/montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-MediumItalic';
+    src: url('/fonts/montserrat/Montserrat-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('/fonts/montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBoldItalic';
+    src: url('/fonts/montserrat/Montserrat-SemiBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('/fonts/montserrat/Montserrat-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-ThinItalic';
+    src: url('/fonts/montserrat/');
+}
+
+@font-face {
+    font-family: 'SVN-Bali';
+    src: url('/fonts/SVN-Bali\ Script.ttf');
+}
+
+/* Các class font-family cho các font sử dụng */
+/*.f-f-Pecita {
+    font-family: 'Pecita';
+}*/
+
+.f-f-Montserrat-BlackItalic {
+    font-family: 'Montserrat-BlackItalic';
+}
+
+.f-f-Montserrat-Bold {
+    font-family: 'Montserrat-Bold';
+}
+
+.f-f-Montserrat-BoldItalic {
+    font-family: 'Montserrat-BoldItalic';
+}
+
+.f-f-Montserrat-ExtraBold {
+    font-family: 'Montserrat-ExtraBold';
+}
+
+.f-f-Montserrat-ExtraBoldItalic {
+    font-family: 'Montserrat-ExtraBoldItalic';
+}
+
+.f-f-Montserrat-ExtraLight {
+    font-family: 'Montserrat-ExtraLight';
+}
+
+.f-f-Montserrat-ExtraLightItalic {
+    font-family: 'Montserrat-ExtraLightItalic';
+}
+
+.f-f-Montserrat-Italic {
+    font-family: 'Montserrat-Italic';
+}
+
+.f-f-Montserrat-Light {
+    font-family: 'Montserrat-Light';
+}
+
+.f-f-Montserrat-LightItalic {
+    font-family: 'Montserrat-LightItalic';
+}
+
+.f-f-Montserrat-Medium {
+    font-family: 'Montserrat-Medium';
+}
+
+.f-f-Montserrat-MediumItalic {
+    font-family: 'Montserrat-MediumItalic';
+}
+
+.f-f-Montserrat-Regular {
+    font-family: 'Montserrat-Regular';
+}
+
+.f-f-Montserrat-SemiBold {
+    font-family: 'Montserrat-SemiBold';
+}
+
+.f-f-Montserrat-SemiBoldItalic {
+    font-family: 'Montserrat-SemiBoldItalic';
+}
+
+.f-f-Montserrat-Thin {
+    font-family: 'Montserrat-Thin';
+}
+
+.f-f-Montserrat-ThinItalic {
+    font-family: 'Montserrat-ThinItalic';
+}
+
+.f-f-SVN-Bali {
+    font-family: 'SVN-Bali', sans-serif; 
+}
+
+/* Định dạng cho hình ảnh trong slider */
+.m-slide-image {
+    margin-top: 50px;
+}
+
+/* Định dạng cho nội dung text-slide-image-note */
+.text-slide-image-note {
+    color: #343434;
+    font-size: 13px;
+}
+
+/* Định dạng cho phần sản phẩm */
+.sanpham {
+    width: 100%;
+    max-width: 100%;
+    text-align: justify;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Định dạng cho hình ảnh trong footer */
+.banner-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(path_to_your_image.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Ẩn bất kỳ phần nào của ảnh vượt ra ngoài phần tử cha */
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .height-width-custom {
+        width: 180px;
+        height: 240px;
+    }
+
+    @keyframes scroll-right {
+        0% {
+            transform: translateX(calc(-221px * 5 - 12px * 5));
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-221px * 5 - 12px * 5));
+        }
+    }
+
+    .slide-image-text {
+        margin-bottom: 16px;
+        font-size: clamp(1.25rem, 1.1286rem + 0.5178vw, 1.75rem);
+    }
+
+    .slider1,
+    .slider2 {
+        background: white;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+        height: 240px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .slider1::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    .slider1::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slider1 .slide-track {
+        animation: scroll-left 80s linear infinite;
+        display: flex;
+        width: calc(221px * 15 + 12px * 15);
+        gap: 12px;
+    }
+
+    .slider2::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    .slider2::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slider2 .slide-track {
+        animation: scroll-right 80s linear infinite;
+        display: flex;
+        width: calc(221px * 15 + 12px * 15);
+        gap: 12px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+.f-s-13 {
+    font-size: 13px;
+}
+
+.f-s-14 {
+    font-size: 14px;
+}
+
+.f-s-16 {
+    font-size: 16px;
+}
+
+.f-s-18 {
+    font-size: 18px;
+}
+
+.f-s-20 {
+    font-size: 20px;
+}
+
+.f-s-22 {
+    font-size: 22px;
+}
+
+.f-s-24 {
+    font-size: 24px;
+}
+
+.f-s-26 {
+    font-size: 26px;
+}
+
+.f-s-28 {
+    font-size: 28px;
+}
+
+.f-s-30 {
+    font-size: 30px;
+}
+
+.f-s-32 {
+    font-size: 32px;
+}
+
+
+.color-primary1 {
+    color: #845e04
+}
+
+.color-primary2 {
+    color: #a94c00
+}
+
+#loadFont {
+    font-family: Pecita;
+    font-size: 30px;
+}
+
+
+#bot-page .thank_text {
+    font-family: 'SVN-Bali';
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    display: inline-block; 
+}
+
+#bot-page .contribute-together {
+    position: relative;
+}
+
+#bot-page .group_thanks {
+    top: 25%;
+}
+
+#bot-page .group_thanks .thank_text {
+    padding: 0 25px 0 20px;
+    position:relative;
+    width: -moz-fit-content;
+    width: fit-content;
+
+}
+
+#bot-page .group_thanks .thank_text::before {
+    content: '';
+    height: 2px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0%;
+    transform: translate(0%, 100%);
+    width: 90%;
+}
+
+#bot-page .group_thanks .btn_together { 
+    border-radius: 30px;
+    background: #b98b21;
+    box-shadow: 0px 8px 0px 0px rgb(67, 59, 3);
+    color: #fff;
+    font-size: clamp(1rem, 0.9432rem + 0.2424vw, 1.125rem);
+    font-family: 'Montserrat-Regular';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-top: clamp(0.8rem, 0.7296rem + 0.3005vw, 1rem);
+    padding-bottom: clamp(0.8rem, 0.7296rem + 0.3005vw, 1rem);
+    padding-inline: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+}
+
+
+#footer {
+    background-color: #1C5091; /* Màu xanh */
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    padding: 0;
+    color: #ffffff; /* Màu chữ trắng */
+    line-height: 130%;
+    position: relative;
+}
+
+#footer .container {
+    padding: 0;
+    margin: 0;
+}
+
+#footer .info {
+    font-size: small;
+    color: #ffffff; /* Màu chữ trắng */
+}
+
+#footer .footer_title {
+    position: relative;
+    font-size: small;
+    color: #ffffff; /* Màu chữ trắng */
+}
+
+#footer .footer_title::before {
+    content: '';
+    height: 2px;
+    background: #ffffff; /* Màu vạch ngang màu trắng */
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0%;
+    transform: translate(0%, 200%);
+    width: 64%;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+#footer .contact-info {
+    font-size: 14px;
+    padding: 0 10px;
+}

@@ -1,0 +1,63 @@
+#positionModal .modal-content {
+    border-radius: 20px;
+}
+
+#positionModal .modal-header {
+    padding: 0;
+}
+
+#positionModal .modal-header img.img_bg {
+    border-top-left-radius: 20px;
+}
+
+#positionModal .modal-header .address {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#positionModal .modal-header .address .province_name {
+    font-size: 24px;
+    font-family: 'Montserrat-Bold';
+    color: #fff;
+}
+
+#positionModal .modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 32px 20px;
+}
+
+#positionModal .modal-body .item {
+    color: #343434;
+    font-size: 16px;
+    font-family: 'Montserrat-Regular';
+    text-align: center;
+}
+
+#positionModal .modal-body .item .group_count {
+    margin-top: 17px;
+    position: relative;
+}
+
+#positionModal .modal-body .item .group_count .text_count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #007469;
+    font-size: 24px;
+    font-family: 'Montserrat-Bold';
+    transform: translate(-50%, -50%);
+}
+
+#positionModal .modal-body .item .title {
+    color: #007469;
+    font-size: 24px;
+    font-family: 'Montserrat-Bold';
+}
